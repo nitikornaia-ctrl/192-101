@@ -141,14 +141,14 @@ class Program
         decimal principal = Convert.ToDecimal(Console.ReadLine());
         Console.Write("Enter interest: ");//อัตราดอกเบี้ย
         decimal interest = Convert.ToDecimal(Console.ReadLine());
-        if(principal < 0)
+        if (principal < 0)
         {
             Console.WriteLine("Pricipal cannot be negative!!!");
             principal = 0;
         }
         else
         {
-            if (interest <0| interest > MAXIMUMINTEREST)
+            if (interest < 0 | interest > MAXIMUMINTEREST)
             {
                 Console.WriteLine("Interest cannot be negative or greater than " +
                 MAXIMUMINTEREST);
@@ -156,20 +156,20 @@ class Program
             }
             else
             {
-                           decimal interestPaid = principal * (interest / 100);
-            decimal total = principal + interestPaid;
-            Console.WriteLine();
-            Console.WriteLine("Principal = " + principal);
-            Console.WriteLine("Interest = " + interest + " %");
-            Console.WriteLine();
-            Console.WriteLine("Interest paid = " + interestPaid);
-            Console.WriteLine("Total = " + total); 
+                decimal interestPaid = principal * (interest / 100);
+                decimal total = principal + interestPaid;
+                Console.WriteLine();
+                Console.WriteLine("Principal = " + principal);
+                Console.WriteLine("Interest = " + interest + " %");
+                Console.WriteLine();
+                Console.WriteLine("Interest paid = " + interestPaid);
+                Console.WriteLine("Total = " + total);
             }
 
         }
 
 
         #endregion
-    
+
     }
 }
