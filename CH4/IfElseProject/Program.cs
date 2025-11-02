@@ -74,29 +74,102 @@ class Program
          Console.WriteLine("Total = " + total);
          #endregion */
 
-        #region โปรแกรมคำนวณผลตอบแทน (CalculateInterest) ด้วย if-else
+        /*  #region โปรแกรมคำนวณผลตอบแทน (CalculateInterest) ด้วย if-else
+          Console.Write("Enter principal: ");//เงินต้้น
+          decimal principal = Convert.ToDecimal(Console.ReadLine());
+          Console.Write("Enter interest: ");//อัตราดอกเบี้ย
+          decimal interest = Convert.ToDecimal(Console.ReadLine());
+          if(principal < 0)
+          {
+              return;
+          }
+          if (interest < 0)
+          {
+              // Console.WriteLine("Interest cannot be negative!!!");
+              // interest = 0;
+          }
+          else
+          {
+              decimal interestPaid = principal * (interest / 100);
+              decimal total = principal + interestPaid;
+              Console.WriteLine();
+              Console.WriteLine("Principal = " + principal);
+              Console.WriteLine("Interest = " + interest + " %");
+              Console.WriteLine();
+              Console.WriteLine("Interest paid = " + interestPaid);
+              Console.WriteLine("Total = " + total);
+          }
+
+
+          #endregion */
+
+        /*   #region โปรแกรมคำนวณผลตอบแทน (CalculateInterest) ด้วย if-elseif
+           Console.Write("Enter principal: ");//เงินต้้น
+           decimal principal = Convert.ToDecimal(Console.ReadLine());
+           Console.Write("Enter interest: ");//อัตราดอกเบี้ย
+           decimal interest = Convert.ToDecimal(Console.ReadLine());
+           if(principal < 0)
+           {
+               Console.WriteLine("Pricipal cannot be negative!!!");
+               principal = 0;
+           }
+           else if (interest < 0)
+           {
+               Console.WriteLine("Interest cannot be negative!!!");
+               interest = 0;
+           }
+           else
+           {
+               decimal interestPaid = principal * (interest / 100);
+               decimal total = principal + interestPaid;
+               Console.WriteLine();
+               Console.WriteLine("Principal = " + principal);
+               Console.WriteLine("Interest = " + interest + " %");
+               Console.WriteLine();
+               Console.WriteLine("Interest paid = " + interestPaid);
+               Console.WriteLine("Total = " + total);
+           }
+
+
+           #endregion */
+
+
+        #region โปรแกรมคำนวณผลตอบแทน (CalculateInterest) ด้วย Nesting if (if ซ้อน if)
+        //การประกาศค่าคงที่
+        const int MAXIMUMINTEREST = 50;
         Console.Write("Enter principal: ");//เงินต้้น
         decimal principal = Convert.ToDecimal(Console.ReadLine());
         Console.Write("Enter interest: ");//อัตราดอกเบี้ย
         decimal interest = Convert.ToDecimal(Console.ReadLine());
-        if (interest < 0)
+        if(principal < 0)
         {
-            Console.WriteLine("Interest cannot be negative!!!");
-            interest = 0;
+            Console.WriteLine("Pricipal cannot be negative!!!");
+            principal = 0;
         }
         else
         {
-            decimal interestPaid = principal * (interest / 100);
+            if (interest <0| interest > MAXIMUMINTEREST)
+            {
+                Console.WriteLine("Interest cannot be negative or greater than " +
+                MAXIMUMINTEREST);
+                interest = 0;
+            }
+            else
+            {
+                           decimal interestPaid = principal * (interest / 100);
             decimal total = principal + interestPaid;
             Console.WriteLine();
             Console.WriteLine("Principal = " + principal);
             Console.WriteLine("Interest = " + interest + " %");
             Console.WriteLine();
             Console.WriteLine("Interest paid = " + interestPaid);
-            Console.WriteLine("Total = " + total);
+            Console.WriteLine("Total = " + total); 
+            }
+
         }
 
 
         #endregion
+    
     }
 }
