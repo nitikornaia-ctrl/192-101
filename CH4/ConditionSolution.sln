@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfElseProject", "IfElseProj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchCaseProject", "SwitchCaseProject\SwitchCaseProject.csproj", "{7147CCF0-2799-4AB0-8090-46CE9669AC35}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopProject", "LoopProject\LoopProject.csproj", "{F3B6D05A-5627-4499-9A68-CC40E3299BD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{7147CCF0-2799-4AB0-8090-46CE9669AC35}.Release|x64.Build.0 = Release|Any CPU
 		{7147CCF0-2799-4AB0-8090-46CE9669AC35}.Release|x86.ActiveCfg = Release|Any CPU
 		{7147CCF0-2799-4AB0-8090-46CE9669AC35}.Release|x86.Build.0 = Release|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Debug|x64.Build.0 = Debug|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Debug|x86.Build.0 = Debug|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Release|x64.ActiveCfg = Release|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Release|x64.Build.0 = Release|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Release|x86.ActiveCfg = Release|Any CPU
+		{F3B6D05A-5627-4499-9A68-CC40E3299BD6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
